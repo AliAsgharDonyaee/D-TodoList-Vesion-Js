@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/00c56b31c2.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- not responsive page. size page for best view 1920*1080 -->
+
+<body class="bg-gray-100">
+    <header class="shadow-lg w-full h-20 bg-white">
+        <nav class="mx-auto w-[1440px] h-full flex justify-center items-center">
+            <nav id="logo" class="w-1/2 h-auto text-3xl font-bold text-gray-800">TodoList <sub class="text-sm font-normal"><span class="text-indigo-700">Cod</span>awin</sub></nav>
+            <nav id="addBtn" class="w-1/2 h-auto flex justify-end items-center">
+                <input type="text" name="todo" id="addText" placeholder="Typing Todo..." class=" rounded-lg rounded-br-none px-2 mr-10 w-96 h-10 border-2 border-l-2 transition-all hover:border-indigo-500 text-gray-800">
+                <button id="addTodo" class="rounded-lg bg-indigo-600 w-12 h-12 text-3xl text-white active:bg-indigo-400">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </nav>
+        </nav>
+    </header>
+    <section id="todoLists" class="mx-auto mt-6 w-[1440px] h-auto grid grid-cols-4 gap-4 gap-y-8 transition-all"></section>
+    <script src="./app.js"></script>
+</body>
+</html>
